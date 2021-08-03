@@ -34,6 +34,10 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
+  def confirm
+    @post = Post.new(post_params)
+  end
+  
   private
   def post_params
     params.require(:post).permit(:content)
@@ -42,4 +46,5 @@ class PostsController < ApplicationController
   def set_post
     @post = Post.find(params[:id])
   end
+
 end
