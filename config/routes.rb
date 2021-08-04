@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :posts do
+  resources :posts, excpet:[:show] do
     collection do
       post :confirm
     end
