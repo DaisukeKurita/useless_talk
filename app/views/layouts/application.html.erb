@@ -10,8 +10,9 @@
   </head>
     <header>
       <ul>
-        <li><a href="#">つぐやく</a></li>
-        <li><a href="#">トップページ</a></li>
+        <li><%= link_to 'Twitter', root_path %></li>
+        <li><%= link_to 'つぶやきを投稿', new_post_path %></li>
+        <li><%= link_to 'つぶやき一覧', posts_path %></li>
       </ul>
     </header>
   <body>
